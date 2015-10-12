@@ -18,6 +18,18 @@
   <preference name="android-minSdkVersion" value="7"/>
   <preference name="android-installLocation" value="auto"/>
 
+
+   <feature name="http://api.phonegap.com/1.0/battery"/>
+    <feature name="http://api.phonegap.com/1.0/camera"/>
+    <feature name="http://api.phonegap.com/1.0/contacts"/>
+    <feature name="http://api.phonegap.com/1.0/file"/>
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/media"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>
+
+
+
 <!-- 
   <gap:plugin name="org.apache.cordova.device-orientation"/>
   <gap:plugin name="org.apache.cordova.dialogs"/>
@@ -38,6 +50,7 @@
 <gap:plugin name="org.apache.cordova.media" source="npm" /> 
 -->
 
+
 <gap:plugin name="org.apache.cordova.device-orientation" source="npm"/> 
 <gap:plugin name="org.apache.cordova.dialogs" source="npm"/> 
 <gap:plugin name="org.apache.cordova.file" source="npm" /> 
@@ -47,24 +60,28 @@
 <gap:plugin name="org.apache.cordova.network-information" source="npm" /> 
 <gap:plugin name="org.apache.cordova.splashscreen" source="npm"/> 
 
-<gap:plugin name="cordova-plugin-whitelist" source="npm" />
+<gap:plugin name="cordova-plugin-whitelist" source="npm"/>
 
-<gap:plugin name="com.cesidiodibenedetto.filechooser" version="1.0.0" />
+<gap:plugin name="com.simplec.plugins.externalfiles" version="0.1.14" />
+
+<gap:plugin name="cordova-plugin-camera" source="npm" />
+
+
+<!-- working -->
 <!-- <gap:plugin name="com.indigoway.cordova.whitelist.whitelistplugin"  version="1.1.1" />
  -->
+<!-- working endddd-->
+
+<!--not working dont use again-->
+<!-- <gap:plugin name="com.cesidiodibenedetto.filechooser" version="1.0.0" /> -->
+<!--not working dont use again endddd-->
 
 
 
 
 
-<!--    <feature name="http://api.phonegap.com/1.0/battery"/>
-    <feature name="http://api.phonegap.com/1.0/camera"/>
-    <feature name="http://api.phonegap.com/1.0/contacts"/>
-    <feature name="http://api.phonegap.com/1.0/file"/>
-    <feature name="http://api.phonegap.com/1.0/geolocation"/>
-    <feature name="http://api.phonegap.com/1.0/media"/>
-    <feature name="http://api.phonegap.com/1.0/network"/>
-    <feature name="http://api.phonegap.com/1.0/notification"/> -->
+
+
 
   <plugin name="DatePickerPlugin" value="com.bikasv.plugins.datepicker.DatePickerPlugin"/>
 
