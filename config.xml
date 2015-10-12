@@ -40,6 +40,7 @@
 
 
 <preference name="android-windowSoftInputMode" value="adjustResize" />
+<preference name="HideKeyboardFormAccessoryBar" value="true"/>
 
 
    <feature name="http://api.phonegap.com/1.0/battery"/>
@@ -51,7 +52,7 @@
     <feature name="http://api.phonegap.com/1.0/network"/>
     <feature name="http://api.phonegap.com/1.0/notification"/>
 
-
+<plugin name="Battery" value="org.apache.cordova.BatteryListener" />
 
 <!-- 
   <gap:plugin name="org.apache.cordova.device-orientation"/>

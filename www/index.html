@@ -3,7 +3,7 @@
 	<head>
 	<title>Watchguard</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	
+	 <script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
 	 <script src="js/jquery.mobile.min.js"></script>
 	 <script src="js/jquery-ui.min.js"></script>
 	 <script src="js/jquery-1.11.3.min.js"></script>
@@ -50,34 +50,30 @@
     //http://bit.ly/1G8jxGB -->hydration
     //http://bit.ly/1OvV4MK -->pgb version whitelist plugin
     //http://bit.ly/1RBYCgu -->npm whitelist
-    
+
+    //http://bit.ly/1LquCn1
+
+    //http://bit.ly/1Lg6kIQ
+
       alert("123");
  },true);
 </script>
    <script type="text/javascript">
-	document.addEventListener("backbutton", function() {
-            if ( $('.ui-page-active').attr('id') == 'dashboard') {
-            	alert("page active exit");
-                exitAppPopup();
-            } else {
-                history.back();             
-            }
-        }, false);
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
 
-function exitAppPopup() {
-    navigator.notification.confirm(
-          'Exit PhoneGap ' + device.cordova + ' Demo?'
-        , function(button) {
-              if (button == 2) {
-              	alert('asd');
-                  navigator.app.exitApp();
-              } 
-          }
-        , 'Exit'
-        , 'No,Yes'
-    );  
-    return false;
-}
+    // Cordova is loaded and it is now safe to make calls Cordova methods
+    //
+    function onDeviceReady() {
+        document.addEventListener("resume", onResume, false);
+    }
+
+    // Handle the resume event
+    //
+    function onResume() {
+    }
+
 
 </script>
 
@@ -94,7 +90,8 @@ function exitAppPopup() {
   }
 </style>
 	</head>
-	<body style="padding:0; margin:0;">
+<!-- 	<body style="padding:0; margin:0;"> -->
+   <body onload="onLoad()">
 
 
    <div data-role="page" id="pageone" class="bg">

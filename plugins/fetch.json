@@ -6,5 +6,13 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-mfilechooser": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-mfilechooser"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }
